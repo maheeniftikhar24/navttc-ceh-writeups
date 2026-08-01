@@ -49,15 +49,15 @@ Overall, I found the theory section manageable. If you've understood the concept
 
 The practical exam carried **80 marks** and lasted **3.5 hours**. Like the theory exam, each student received a **different practical task**, making every assessment unique.
 
-After completing the practical task, candidates were called individually to **demonstrate their work** and answer questions during a **viva**. Since the demonstrations continued after the official exam time, female candidates were called first due to the late hours.
+After completing the practical task, each candidate was called individually to **demonstrate their work** and answer questions during a **viva**. Since the demonstrations continued after the official exam time, female candidates were called first due to the late hours.
 
 In addition to completing the task, we were required to prepare **two separate reports**:
 
-1. **Detailed Technical Report (PDF):** Submitted to the examiner during the demo. It included the methodology, commands used, screenshots, findings, explanation of the vulnerability, remediation recommendations, and other technical details.
+1. **Detailed Technical Report (PDF):** Submitted to the examiner during the demo. It included the methodology, commands used, screenshots, findings, technical explanation, remediation recommendations, and secure coding practices.
 
 2. **One-Page Written Report:** A handwritten summary submitted to the **NAVTTC assessor**, briefly describing the assigned task, the approach followed, and the outcome.
 
-The examiner reviewed the practical implementation, asked questions about the methodology, and assessed our understanding of the assigned task. Because of this process, many students, including myself, left around **7:30–8:00 PM**, even though the official assessment ended at **6:00 PM**.
+The examiner reviewed the practical implementation, asked questions about the methodology, and evaluated our understanding of the assigned task. I left the campus at around **7:30 PM** after completing my demonstration and viva. A friend who stayed behind informed me that some candidates were still waiting for their turn. **My advice is to keep your entire day free**, as the assessment process can continue well beyond the official end time.
 
 ### My Practical Task
 
@@ -75,6 +75,9 @@ My approach included:
 * Identifying the SQL Injection vulnerability.
 * Demonstrating authentication bypass using different SQL injection payloads.
 * Explaining why the payload worked and identifying the root cause of the vulnerability.
-* Documenting the findings in both the detailed technical report and the one-page summary report.
+* Preparing both the **detailed technical report (PDF)** and the **one-page handwritten summary** required for the assessment.
+
+> A detailed write-up of this task will be available in the **SQL Injection Authentication Bypass** section of this repository.
+
 
 
