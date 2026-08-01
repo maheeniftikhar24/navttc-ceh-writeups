@@ -88,4 +88,21 @@ Every student received a different practical task. Some of the tasks I remember 
 
 > **Note:** These are based on discussions with fellow candidates after the assessment and are shared only to give future students an idea of the types of practical tasks they may encounter.
 
+## Overall Tips
+
+
+
+* Revise the core concepts covered during the 3-month CEH training instead of relying on memorization.
+
+* Practice common tools such as **Nmap**, **Burp Suite**, **Nessus**, and basic Linux commands.
+
+* Be prepared to explain your methodology during the demo and viva.
+
+* Keep your entire day free, as the assessment may continue beyond the official end time.
+
+## Conclusion
+
+Overall, I found the NAVTTC CEH final assessment to be a good mix of theoretical knowledge and hands-on practical skills. If you understand the concepts, practice in a lab environment, and can clearly explain your approach, you'll be well prepared.
+
+I hope this write-up helps future NAVTTC CEH students understand what to expect. If you've also taken the assessment and remember other practical tasks or MCQ topics, feel free to contribute by opening an issue or pull request.
 
