@@ -4,6 +4,19 @@ After completing the 3-month **NAVTTC Certified Ethical Hacker (CEH)** training,
 
 In this write-up, I'll share my experience of the complete assessment, including the **20-mark MCQ exam** and the **80-mark practical lab exam**. I'll cover the assessment format, time management, the practical task I received, tasks assigned to other students, the demo and viva process, and some preparation tips that I hope will help future candidates.
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Assessment Overview](#assessment-overview)
+- [Theory Exam](#theory-exam)
+- [Practical Exam](#practical-exam)
+  - [My Practical Task](#my-practical-task)
+- [Tasks Assigned to Other Students](#tasks-assigned-to-other-students)
+- [Overall Tips](#overall-tips)
+- [Conclusion](#conclusion)
+
+---
+
 ## Assessment Overview
 
 The final assessment was conducted on **13 May 2026** as part of the NAVTTC CEH program.
