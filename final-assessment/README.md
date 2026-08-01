@@ -45,3 +45,36 @@ The questions covered topics from throughout the 3-month NAVTTC CEH training. So
 
 Overall, I found the theory section manageable. If you've understood the concepts covered during the training instead of memorizing them, you should be able to complete it comfortably within the given time.
 
+## Practical Exam
+
+The practical exam carried **80 marks** and lasted **3.5 hours**. Like the theory exam, each student received a **different practical task**, making every assessment unique.
+
+After completing the practical task, candidates were called individually to **demonstrate their work** and answer questions during a **viva**. Since the demonstrations continued after the official exam time, female candidates were called first due to the late hours.
+
+In addition to completing the task, we were required to prepare **two separate reports**:
+
+1. **Detailed Technical Report (PDF):** Submitted to the examiner during the demo. It included the methodology, commands used, screenshots, findings, explanation of the vulnerability, remediation recommendations, and other technical details.
+
+2. **One-Page Written Report:** A handwritten summary submitted to the **NAVTTC assessor**, briefly describing the assigned task, the approach followed, and the outcome.
+
+The examiner reviewed the practical implementation, asked questions about the methodology, and assessed our understanding of the assigned task. Because of this process, many students, including myself, left around **7:30–8:00 PM**, even though the official assessment ended at **6:00 PM**.
+
+### My Practical Task
+
+The task assigned to me was:
+
+> **Write a simple SQL Injection payload to bypass login and explain why it works.**
+
+To remain within ethical and legal boundaries, I selected the intentionally vulnerable training application **http://testfire.net/** as my target.
+
+My approach included:
+
+* Verifying connectivity to the target using **ping**.
+* Performing service enumeration using **Nmap**.
+* Testing the login functionality.
+* Identifying the SQL Injection vulnerability.
+* Demonstrating authentication bypass using different SQL injection payloads.
+* Explaining why the payload worked and identifying the root cause of the vulnerability.
+* Documenting the findings in both the detailed technical report and the one-page summary report.
+
+
