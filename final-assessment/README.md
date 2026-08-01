@@ -79,5 +79,13 @@ My approach included:
 
 > A detailed write-up of this task will be available in the **SQL Injection Authentication Bypass** section of this repository.
 
+## Tasks Assigned to Other Students
+
+Every student received a different practical task. Some of the tasks I remember being assigned to other candidates included:
+
+* Exploiting **Linux** and **Windows** machines.
+* Performing **Privilege Escalation** on compromised systems.
+
+> **Note:** These are based on discussions with fellow candidates after the assessment and are shared only to give future students an idea of the types of practical tasks they may encounter.
 
 
