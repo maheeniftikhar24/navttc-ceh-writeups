@@ -1,3 +1,7 @@
+# NAVTTC CEH Final Assessment Experience
+
+> **Disclaimer:** This write-up is based on my personal experience of the NAVTTC CEH final assessment. It is intended to help future candidates understand the assessment process and prepare effectively. It is not an official NAVTTC guide, and the tasks or questions mentioned may vary between candidates.
+
 ## Table of Contents
 
 - [Introduction](#introduction)
