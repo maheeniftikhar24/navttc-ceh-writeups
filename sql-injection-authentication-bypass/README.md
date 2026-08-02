@@ -66,3 +66,58 @@ After identifying a successful payload, I demonstrated that the application acce
 ### 6. Documentation
 
 Finally, I documented the methodology, screenshots, findings, impact, and remediation recommendations in the technical report submitted during the practical assessment.
+
+## SQL Injection Payloads Tested
+
+During the assessment, I tested multiple SQL Injection payloads against the login page to determine whether the application was vulnerable to authentication bypass.
+
+| Payload           | Result                             |
+| ----------------- | ---------------------------------- |
+| `' OR '1'='1' --` | ✅ Successful Authentication Bypass |
+
+### Successful Payload
+
+```sql
+' OR '1'='1' --
+```
+
+### Why It Works
+
+A vulnerable application constructs SQL queries by directly concatenating user input into the database query. For example:
+
+```sql
+SELECT * FROM users
+WHERE username = '[username]'
+AND password = '[password]';
+```
+
+When the payload is entered into the username field, the query becomes:
+
+```sql
+SELECT * FROM users
+WHERE username = '' OR '1'='1' --'
+AND password = '';
+```
+
+Here's what happens:
+
+* `'1'='1'` is always **TRUE**.
+* The `OR` operator makes the authentication condition evaluate to **TRUE**.
+* `--` comments out the rest of the SQL query, including the password check.
+* As a result, the application may authenticate the user without requiring valid credentials.
+
+> **Note:** This demonstration was performed only against the intentionally vulnerable training application **http://testfire.net/** as part of the NAVTTC CEH practical assessment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
