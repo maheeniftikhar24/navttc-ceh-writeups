@@ -40,6 +40,8 @@ Before testing the application, I verified that the target was reachable using:
 ```bash
 ping testfire.net
 ```
+![Uploading image.png…]()
+
 
 ### 2. Service Enumeration
 
