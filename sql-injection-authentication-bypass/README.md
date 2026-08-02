@@ -55,13 +55,13 @@ sudo nmap -p 80,443 -sV testfire.net
 
 ### 3. Reconnaissance
 
-I explored the application manually and identified the login page https://testfire.net/login.jsp as a potential input point for authentication testing.
+I performed manual reconnaissance of the target application and identified the login page (`/login.jsp`) as a potential authentication endpoint for SQL Injection testing.
 <img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/5f765249-dcf0-4d84-b3f8-24bc32cc0b5e" />
 *Figure 3: Target login page before testing.*
 
 ### 4. SQL Injection Testing
 
-I tested the login form using several common SQL Injection payloads to determine whether authentication could be bypassed.
+I tested the login form using common SQL Injection payloads to determine whether user input was properly sanitized and whether authentication could be bypassed.
 
 ### 5. Authentication Bypass
 
@@ -111,6 +111,23 @@ Here's what happens:
 * As a result, the application may authenticate the user without requiring valid credentials.
 
 > **Note:** This demonstration was performed only against the intentionally vulnerable training application **http://testfire.net/** as part of the NAVTTC CEH practical assessment.
+
+## Proof of Concept
+
+The following screenshots demonstrate the successful authentication bypass.
+
+### Step 1 – Target Login Page
+
+<img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/e02aade6-52d6-4967-85d9-fd7caf93f4a3" />
+
+### Step 2 – SQL Injection Payload
+
+```sql
+' OR '1'='1' --
+
+<img width="1772" height="976" alt="image" src="https://github.com/user-attachments/assets/73363d3a-bce1-4578-82c0-5f34693616af" />
+
+
 
 
 
