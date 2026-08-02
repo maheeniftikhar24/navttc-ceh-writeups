@@ -1,17 +1,14 @@
 # SQL Injection Authentication Bypass
 
-## Objective
+## Table of Contents
 
-## Target Environment
-
-## Methodology
-
-## Testing Process
-
-## Vulnerability Explanation
-
-## Proof of Concept
-
-## Remediation
-
-## Lessons Learned
+- [Objective](#objective)
+- [Target](#target)
+- [Tools Used](#tools-used)
+- [Methodology](#methodology)
+- [SQL Injection Payloads Tested](#sql-injection-payloads-tested)
+- [Proof of Concept](#proof-of-concept)
+- [Root Cause](#root-cause)
+- [Impact](#impact)
+- [Remediation](#remediation)
+- [Lessons Learned](#lessons-learned)
