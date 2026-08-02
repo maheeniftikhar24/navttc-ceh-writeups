@@ -59,10 +59,6 @@ I performed manual reconnaissance of the target application and identified the l
 <img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/5f765249-dcf0-4d84-b3f8-24bc32cc0b5e" />
 *Figure 3: Target login page before testing.*
 
-### 4. SQL Injection Testing
-
-I tested the login form using common SQL Injection payloads to determine whether user input was properly validated and 
-
 ## SQL Injection Payloads Tested
 
 During the assessment, I tested multiple SQL Injection payloads against the login page to determine whether the application was vulnerable to authentication bypass.
@@ -106,31 +102,62 @@ Here's what happens:
 
 ## Proof of Concept
 
-The following screenshots demonstrate the successful authentication bypass.
+The following screenshots demonstrate the successful exploitation of the SQL Injection vulnerability during the practical assessment.
 
 ### Step 1 – Target Login Page
 
-<img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/e02aade6-52d6-4967-85d9-fd7caf93f4a3" />
+I navigated to the Altoro Mutual login page and identified the username field as the primary input for authentication testing.
+
+<img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/ae901f81-2557-47af-af14-c8334f460d18" />
+*Figure 4: Target login page before testing.*
 
 ### Step 2 – SQL Injection Payload
 
+The following payload was entered into the **username** field:
+
 ```sql
 ' OR '1'='1' --
+```
 
-<img width="1772" height="976" alt="image" src="https://github.com/user-attachments/assets/73363d3a-bce1-4578-82c0-5f34693616af" />
+The password field was populated with any random value('test' in my case), and the login request was submitted.
+
+<img width="1772" height="976" alt="image" src="https://github.com/user-attachments/assets/64b8371b-525a-4de5-b114-d8ca9ace6e94" />
+*Figure 5: SQL Injection payload entered into the login form.*
+
+### Step 3 – Authentication Bypass
+
+After submitting the payload, the application authenticated the session without requiring valid credentials, confirming that the login form was vulnerable to SQL Injection.
+
+<img width="1777" height="1003" alt="image" src="https://github.com/user-attachments/assets/a39c1106-d41a-425b-8ca8-932bddd6e355" />
+*Figure 6: Successful authentication bypass.*
 
 
+The successful login confirmed that the application was vulnerable to **SQL Injection Authentication Bypass**, allowing unauthorized access by manipulating the SQL query used for user authentication.
 
+> **Note:** This proof of concept was performed only against the intentionally vulnerable training application **http://testfire.net/** in an authorized lab environment as part of the NAVTTC CEH practical assessment.
 
+## Root Cause
 
+The application did not properly validate or sanitize user input before constructing SQL queries. As a result, the injected payload modified the query logic and bypassed authentication.
 
+## Impact
 
+A successful SQL Injection authentication bypass can allow an attacker to:
 
+* Gain unauthorized access.
+* Bypass authentication controls.
+* Potentially access sensitive information.
 
+## Remediation
 
+* Use parameterized queries (prepared statements).
+* Validate and sanitize user input.
+* Apply the principle of least privilege to database accounts.
+* Perform regular security testing.
 
+## Lessons Learned
 
-
+This exercise reinforced the importance of following a structured penetration testing methodology and demonstrated how improper input validation can lead to authentication bypass. It also highlighted the value of clear technical reporting and effectively communicating findings during the assessment.
 
 
 
