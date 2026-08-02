@@ -59,6 +59,10 @@ I performed manual reconnaissance of the target application and identified the l
 <img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/5f765249-dcf0-4d84-b3f8-24bc32cc0b5e" />
 *Figure 3: Target login page before testing.*
 
+### 4. SQL Injection Testing
+
+I tested the login form using common SQL Injection payloads to determine whether user input was properly validated and 
+
 ## SQL Injection Payloads Tested
 
 During the assessment, I tested multiple SQL Injection payloads against the login page to determine whether the application was vulnerable to authentication bypass.
