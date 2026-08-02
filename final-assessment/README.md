@@ -61,7 +61,7 @@ The questions covered topics from throughout the 3-month NAVTTC CEH training. So
 - DoS
 - Bug Bounty Programs
 
-Overall, I found the theory section manageable. If you've understood the concepts covered during the training instead of memorizing them, you should be able to complete it comfortably within the given time.
+> A list of 20 set of mcq questions are available in the **Theory MCQS** section of this repository.
 
 ## Practical Exam
 
