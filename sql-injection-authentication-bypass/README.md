@@ -41,6 +41,7 @@ Before testing the application, I verified that the target was reachable using:
 ping testfire.net
 ```
 <img width="1379" height="392" alt="image" src="https://github.com/user-attachments/assets/ec18a860-6d17-40ed-b414-9ecfe54c9f68" />
+*Figure 1: Connectivity Verification using ping.*
 
 ### 2. Service Enumeration
 
@@ -49,12 +50,16 @@ I performed a basic Nmap scan to identify the services running on the target.
 ```bash
 sudo nmap -p 80,443 -sV testfire.net
 ```
+<img width="1600" height="469" alt="image" src="https://github.com/user-attachments/assets/c91919f2-9068-4727-9fad-50c5508e9e38" />
+*Figure 2: Service enumeration using Nmap.*
 
 This helped identify the web service that would later be tested for SQL Injection vulnerabilities.
 
 ### 3. Reconnaissance
 
 I explored the application manually and identified the login page https://testfire.net/login.jsp as a potential input point for authentication testing.
+<img width="1774" height="990" alt="image" src="https://github.com/user-attachments/assets/5f765249-dcf0-4d84-b3f8-24bc32cc0b5e" />
+*Figure 3: Target login page before testing.*
 
 ### 4. SQL Injection Testing
 
