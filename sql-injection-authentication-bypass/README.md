@@ -29,7 +29,7 @@ The objective of this assessment was to demonstrate a simple SQL Injection authe
 * Ping
 * Nmap
 * Web Browser
-* Kali Linux working as a host os (you can use in in a vm environment as well)
+*- Kali Linux (host operating system)
 
 ## Methodology
 
